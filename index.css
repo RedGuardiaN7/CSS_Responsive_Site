@@ -103,6 +103,7 @@ h1 {
     text-transform: uppercase;
     border-radius: 12px;
     margin-top: 15px;
+    letter-spacing: 3px;
 
 }
 
@@ -119,6 +120,7 @@ h1 {
     text-transform: uppercase;
     border-radius: 12px;
     margin-top: 15px;
+    letter-spacing: 3px;
 
 }
 
@@ -349,5 +351,98 @@ footer {
         margin-left: 380px;
         width: 65px;
         padding-top: 25px;
+    }
+
+    div {
+        display: flex;
+    }
+
+    .img_div_yellow {
+        height: 800px;
+        padding: 0px;
+    }
+
+    .img_div_yellow > .img_container {
+        order: 1;
+    }
+
+    .img_div_yellow > .text_div {
+        order: 2;
+    }
+
+    .img_container {
+        width: 55%;
+    }
+
+    .div_img {
+        max-height: 800px;
+        right: 250px;
+        text-align: start;
+    }
+
+    .text_div {
+        flex-direction: column;
+        width: 35%;
+        align-content: start;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .white_title {
+        color: white;
+        font-size: 60px;
+    }
+
+    .white_button {
+        width: 240px;
+    }
+
+    .black_button {
+        width: 240px;
+    }
+
+    .div_grey {
+        
+        height: 600px;
+        padding: 20px 150px 50px 150px;
+    }
+
+    .div_grey > .text_div {
+        width: 320px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .div_grey > .green_button, .orange_button {
+        width: 320px;
+        height: 240px;
+    }
+
+    .div_grey > .orange_button {
+        position: relative;
+        left: 50px;
+        top: 100px;
+    }
+
+    .div_grey > .green_button {
+        position: relative;
+        top: 250px;
+    }
+
+    .img_div_green {
+        height: 800px;
+        padding: 0;
+        justify-content: end;
+    }
+
+    .img_div_green > .img_container {
+        width: 50%;
+    }
+
+    #news_title {
+        font-size: 66px;
+        text-align: center;
     }
 }
