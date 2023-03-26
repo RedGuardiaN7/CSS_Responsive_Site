@@ -18,7 +18,7 @@ header {
     color: white;
     max-width: 100%;
     overflow-wrap: break-word;
-    padding: 25px 50px 50px 50px;
+    padding: 25px 50px 0px 0px;
 }
 
 .img_div_green {
@@ -26,7 +26,7 @@ header {
     color: white;
     max-width: 100%;
     overflow-wrap: break-word;
-    padding: 25px 50px 50px 50px;
+    padding: 25px 50px 0px 0px;
 }
 
 .img_div_orange {
@@ -34,11 +34,12 @@ header {
     color: white;
     max-width: 100%;
     overflow-wrap: break-word;
-    padding: 25px 50px 50px 50px;
+    padding: 25px 50px 0px 0px;
 }
 
 .text_div {
     width: 330px;
+    margin-left: 50px;
 }
 
 .white_title {
@@ -263,11 +264,7 @@ li {
 
 .move_left {
     position: relative;
-    right: 120px;
-}
-
-.flip {
-    transform: scaleX(-1)
+    right: 100px;
 }
 
 .icon {
@@ -284,11 +281,20 @@ li {
 }
 
 .img_container {
+    margin-top: 40px;
     width: 100%;
     overflow: hidden;
 }
 
 .div_grey {
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 50px 50px;
+}
+
+.div_grey_2 {
     background-color: lightgray;
     font-family: 'Open Sans', sans-serif;
     max-width: 100%;
@@ -335,6 +341,25 @@ label {
     align-items: center;
 }
 
+form {
+    text-align: center;
+}
+
+label {
+    position: relative;
+    right: 130px;
+}
+
+.check {
+    position: relative;
+    left: 10px;
+}
+
+#terms {
+    position: relative;
+    left: 12px;
+}
+
 textarea {
     background-color: lightgray;
     width: 90%;
@@ -350,14 +375,38 @@ textarea {
 
 .submit_button > .green_button {
     margin-top: 5px;
+    width: 95%;
 }
 
 .green_title {
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
+.contact_form {
+    margin-top: 40px;
+}
+
+.orange_button_2 {
+    background-color: rgb(245, 157, 50);
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: start;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.right_centered {
+    position: relative;
+    left: 50px;
+}
 
 footer {
     font-size: 20px;
@@ -403,6 +452,12 @@ footer {
     }
 
     .text_div {
+        margin-left: 0px;
+        margin-top: 160px;
+        width: 450px;
+    }
+
+    .text_div_2 {
         flex-direction: column;
         width: 35%;
         align-content: start;
@@ -444,7 +499,6 @@ footer {
 
     .div_grey > .orange_button {
         position: relative;
-        left: 50px;
         top: 100px;
     }
 
@@ -461,7 +515,9 @@ footer {
     }
 
     .img_div_green > .img_container {
-        width: 50%;
+        height: 800px;
+        position: relative;
+        bottom: 40px;
     }
 
     .news_div{
@@ -597,7 +653,6 @@ footer {
         font-size: 48px ;
         text-align: start;
         font-weight: 900;
-
     }
 
     .contact_form > .bullet_card {
@@ -611,16 +666,25 @@ footer {
 
     #agree {
         position: relative;
-        left: 15px
+        left: 5px
     }
 
+
+
     .submit_button {
-        width: 90%;
+        width: 95%;
+        position: relative;
+        right: 10px;
     }
 
     .submit_button > .green_button {
         width: 100%;
         position: relative;
         left: 20px;
+    }
+
+    label {
+        position: relative;
+        right: 165px;
     }
 }
