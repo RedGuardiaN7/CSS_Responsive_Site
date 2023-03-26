@@ -1,0 +1,105 @@
+/* For smartphones: */
+body{
+    margin: 0;
+}
+
+header {
+    height: 80px;
+}
+
+#logo {
+    margin-left: 50px;
+    width: 65px;
+    padding-top: 25px;
+}
+
+.img_div_yellow{
+    background-color: rgb(240,192,62);
+    color: white;
+    width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 50px 50px;
+}
+
+.text_div {
+    width: 330px;
+}
+
+.white_title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.white_button {
+background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 12px;
+  margin-top: 15px;
+
+}
+
+.black_button {
+    background-color: black;
+      border: none;
+      color: white;
+      padding: 15px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 12px;
+      margin-top: 15px;
+    
+    }
+
+.div_img {
+    max-width: 140%;
+    position: relative;
+    right: 120px;
+}
+
+.div_grey {
+    background-color:lightgray;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 50px 50px;
+}
+
+.subtitle {
+    font-style: italic;
+}
+/* For desktop */
+
+@media only screen and (min-width: 1400px) {
+
+    #logo {
+        margin-left: 380px;
+        width: 65px;
+        padding-top: 25px;
+    }
+}
