@@ -109,6 +109,36 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* 
+    molte proprietà di questo bottone sono copincollate 
+    prova ad astrarre quelle comuni e creare delle varianti
+    singole (es. metodologia BEM).
+    ES. .my-button
+*/
+
+.my-button {
+    border: none;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+
+.my-button.my-button--white {
+    background-color: white;
+}
+.my-button.my-button--black {
+    background-color: black;
+    color: white;
+}
+
 .white_button {
     background-color: white;
     border: none;
@@ -180,6 +210,8 @@ h2 {
     margin-left: auto;
     margin-right: auto; 
 }
+
+/* stessa storia dei bottoni. Rifattorizza e astrai le proprietà comuni in un componente generico */
 
 .news_card {
     background-color: white;

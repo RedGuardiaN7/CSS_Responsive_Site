@@ -1,0 +1,40 @@
+Scegli elementi più semantici e nomi di classi più legate al
+contenuto del sito per facilitare la lettura del tuo html. Valuta quindi l'uso di
+elementi come:
+
+ad es.:
+main
+article
+section
+h1 - h6
+etc.
+
+per quanto riguarda i nomi delle sezioni del sito puoi usare un id o una classe con un 
+buon nome che ne descriva brevemente il contenuto.
+es.
+
+.hero-section
+#about-us
+#our-latest-news
+
+una volta ottenute queste sezioni è più facile strutturare il css, che, ahime, è una tecnologia che 
+ha poca struttura. Sta a noi organizzare un unico foglio.
+Ti suggerisco di riordinare il css in modo logico, ad esempio:
+-regole globali
+-componenti riutilizzabili
+-utilities riutilizzabili
+-sezione 1
+-sezione 2
+-sezione 3 
+etc.
+
+ma non è una regola fissa. Come strutturare il css può dipendere di progetto in progetto, ma un'ordine bisogna trovarglielo
+
+Il problema principale è nella leggibilità del codice. Il codice dev'essere leggibile non solo per gli eventuali collaboratori futuri
+che metteranno le mani sul codice, ma anche per te che tra un giorno non ricorderai minimamente cosa avevi fatto. 
+
+Ti chiederei di rifattorizzare (modificare il codice senza cambiare il risultato) e ripulire.
+
+Regola d'oro: codice leggibile = codice buono
+
+In definitiva però il risultato c'è, ed è responsive per desktop e mobile. Ottimo lavoro!
