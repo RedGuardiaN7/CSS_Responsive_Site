@@ -49,6 +49,7 @@ ul li:before {
 li {
     display: table-row;
     font-family: 'Open Sans', sans-serif;
+    text-align: start;
 }
 
 input {
@@ -58,6 +59,7 @@ input {
     border-radius: 10px;
     min-height: 35px;
     padding-left: 5px;
+    margin-bottom: 10px;
 
 }
 
@@ -65,6 +67,7 @@ label {
     font-size: 16px;
     position: relative;
     right: 130px;
+    bottom: 5px;
 }
 
 form {
@@ -197,6 +200,10 @@ footer {
     color: white;
 }
 
+.my_card.my_card--orange > p {
+    font-size: 16px;
+}
+
 .my_card.my_card--green {
     background-color: rgb(60, 159, 98);
     color: white;
@@ -237,6 +244,10 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
+.my_card.my_card--news>p {
+    color: darkgray;
+}
+
 .news_img {
     height: 60%;
     width: 90%;
@@ -254,41 +265,15 @@ footer {
     padding: 25px 50px 0px 0px;
 }
 
+/* Section 6 - Benefits of Coaching */
 
-
-
-
-
-
-
-
-.white_card > p {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 0px;
+.title_coaching {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    margin-top: 10px;
 }
 
-.my_card.my_card--orange > p {
-    font-size: 16px;
-}
-
-
-
-form>a {
-    color: lightskyblue;
-    text-decoration: none;
-
-}
-
-.my_card.my_card--news>p {
-    color: darkgray;
-}
-
-.white_card>p {
-    color: darkgray
-}
-
-.green_subtitle {
+.subtitle_coaching {
     text-decoration: underline;
     font-size: 18px;
     padding-top: 40px;
@@ -296,90 +281,45 @@ form>a {
     font-weight: 600;
 }
 
-
-
-/* 
-    molte proprietà di questo bottone sono copincollate 
-    prova ad astrarre quelle comuni e creare delle varianti
-    singole (es. metodologia BEM).
-    ES. .my-button
-*/
-
-
-
-
-
-
-
-
-
-
-
-.align_left {
-    text-align: left;
-}
-
-/* stessa storia dei bottoni. Rifattorizza e astrai le proprietà comuni in un componente generico */
-
-.my_card {
-    overflow-wrap: break-word;
-    border: none;
-    padding: 20px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 20px;
-    margin-top: 30px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-.white_card {
+.my_card.my_card--list {
     background-color: white;
-    border: none;
-    padding: 20px 20px 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 1000;
-    border-radius: 20px;
-    margin-top: 30px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 220px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
-.bullet_card {
-    color: black;
-    background-color: white;
-    border: none;
     padding: 15px 15px;
     justify-content: left;
-    text-decoration: none;
-    overflow-wrap: break-word;
     font-size: 20px;
     line-height: 40px;
     font-weight: 400;
     border-radius: 12px;
     margin-top: 15px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+.align_left {
+    text-align: start;
+}
 
+/* Section 8 - Happiness and Mindfulness*/
 
+.stats_cards {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.my_card.my_card--stat {
+    background-color: white;
+    border: none;
+    padding: 20px 20px 5px 20px;
+    font-weight: 1000;
+    width: 80%;
+    height: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
 
-
-
+.my_card.my_card--stat > p {
+    color: darkgray;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
 
 .icon {
     width: 80px;
@@ -394,25 +334,9 @@ form>a {
     filter: invert(77%) sepia(43%) saturate(3913%) hue-rotate(338deg) brightness(105%) contrast(92%);
 }
 
+/* Section 9 - Form */
 
-
-.grey_background {
-    background-color: lightgray;
-    font-family: 'Open Sans', sans-serif;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    padding: 25px 50px 50px 50px;
-}
-
-.grey_background_2 {
-    background-color: lightgray;
-    font-family: 'Open Sans', sans-serif;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    padding: 25px 50px 50px 50px;
-}
-
-.div_black {
+.black_background {
     background-color: black;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -421,13 +345,18 @@ form>a {
     padding: 25px 40px 50px 40px;
 }
 
+.contact_form {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
 
-
-
-#terms {
-    height: 15px;
-    width: 15px;
-    margin-right: 8px;
+.my_card.my_card--form {
+    background-color: white;
+    color: black;
+    min-width: 90%;
+    max-width: 500px;
+    
 }
 
 #agree {
@@ -436,19 +365,25 @@ form>a {
     align-items: center;
 }
 
-
+#terms {
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    position: relative;
+    left: 12px;
+}
 
 .check {
     position: relative;
     left: 10px;
 }
 
-#terms {
-    position: relative;
-    left: 12px;
+label > a {
+    color: rgb(0, 157, 255);
+    text-transform: none;
+    text-decoration: underline;
+    font-size: 16px;
 }
-
-
 
 .submit_button {
     text-align: center;
@@ -458,37 +393,6 @@ form>a {
     margin-top: 5px;
     width: 95%;
 }
-
-.green_title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-    margin-top: 10px;
-}
-
-.contact_form {
-    margin-top: 40px;
-}
-
-.my_card.my_card--orange_2 {
-    background-color: rgb(245, 157, 50);
-    border: none;
-    color: white;
-    padding: 20px 10px;
-    text-align: start;
-    overflow-wrap: break-word;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-
-}
-
-.right_centered {
-    position: relative;
-    left: 50px;
-}
-
 
 /* For desktop */
 
@@ -616,7 +520,7 @@ form>a {
         order: 2;
     }
 
-    .coaching_div {
+    .flex_center-xxl {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -642,9 +546,9 @@ form>a {
         font-size: 16px;
     }
 
-    .coaching_div>.my_card.my_card--green,
+    .flex_center-xxl>.my_card.my_card--green,
     .my_card.my_card--orange_2,
-    .bullet_card {
+    .my_card.my_card--list {
         height: 460px;
         box-sizing: content-box;
         padding: 30px;
@@ -653,13 +557,13 @@ form>a {
         text-align: start;
     }
 
-    .coaching_div>.my_card.my_card--green,
+    .flex_center-xxl>.my_card.my_card--green,
     .my_card.my_card--orange_2 {
         width: 300px;
     }
 
 
-    .bullet_card {
+    .my_card.my_card--list {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -672,19 +576,13 @@ form>a {
         font-size: 20px;
     }
 
-    .grey_background_2 {
-        background-color: lightgray;
+    .grey_background.grey_background--xxl {
         display: flex;
         height: 600px;
         justify-content: center;
     }
 
-    .stats_cards {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .stats_cards>.white_card {
+    .stats_cards>.my_card.my_card--stat {
         width: 20%;
         height: auto;
     }
@@ -694,13 +592,13 @@ form>a {
         margin-bottom: 10px;
     }
 
-    .white_card>p {
+    .my_card.my_card--stat>p {
         font-size: 20px;
         font-weight: 800;
         margin-bottom: 30px;
     }
 
-    .div_black {
+    .black_background {
         display: flex;
         justify-content: center;
         align-items: start;
@@ -721,7 +619,7 @@ form>a {
         font-weight: 900;
     }
 
-    .contact_form>.bullet_card {
+    .contact_form>.my_card.my_card--list {
         padding-bottom: 60px;
     }
 
