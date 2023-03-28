@@ -121,7 +121,23 @@ footer {
     letter-spacing: 3px;
 }
 
-/* Section 1 */
+.my_card {
+    overflow-wrap: break-word;
+    border: none;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 30px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section 1 - Introduction */
 
 .yellow_background {
     background-image: url(img/yellow_background.jpg);
@@ -142,12 +158,51 @@ footer {
     font-weight: 700;
 }
 
+.my-button.my-button--white {
+    background-color: white;
+}
+
 .move_left {
     position: relative;
     right: 100px;
 }
 
-/* Section 2 */
+/* Section 2 - Science of Happiness*/
+
+.grey_background {
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 50px 50px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+.my-button.my-button--black {
+    background-color: black;
+    color: white;
+}
+
+.my_card.my_card--orange {
+    background-color: rgb(245, 157, 50);
+    color: white;
+}
+
+.my_card.my_card--green {
+    background-color: rgb(60, 159, 98);
+    color: white;
+}
+
+/* Section 3  - 7 Ways To Be Happy*/ 
 
 .green_background {
     background-image: url(img/green_background.jpg);
@@ -156,6 +211,40 @@ footer {
     overflow-wrap: break-word;
     padding: 25px 50px 0px 0px;
 }
+
+/* Section 4 - News*/
+
+.news_div {
+    display: block;
+    height: auto;
+}
+
+#news_title {
+    font-size: 66px;
+    text-align: center;
+}
+
+.news_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my_card.my_card--news {
+    background-color: white;
+    padding: 20px 10px 0px 10px;
+    width: 357px;
+    height: 410px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.news_img {
+    height: 60%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Section 5 - Happy Tips*/ 
 
 .orange_background {
     background-image: url(img/orange_background.jpg);
@@ -169,11 +258,7 @@ footer {
 
 
 
-.title {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-}
+
 
 
 
@@ -183,7 +268,7 @@ footer {
     margin-bottom: 0px;
 }
 
-.orange_button > p {
+.my_card.my_card--orange > p {
     font-size: 16px;
 }
 
@@ -195,7 +280,7 @@ form>a {
 
 }
 
-.news_card>p {
+.my_card.my_card--news>p {
     color: darkgray;
 }
 
@@ -223,55 +308,24 @@ form>a {
 
 
 
-.my-button.my-button--white {
-    background-color: white;
+
+
+
+
+
+
+
+.align_left {
+    text-align: left;
 }
 
-.my-button.my-button--black {
-    background-color: black;
-    color: white;
-}
+/* stessa storia dei bottoni. Rifattorizza e astrai le proprietà comuni in un componente generico */
 
-.white_button {
-    background-color: white;
+.my_card {
+    overflow-wrap: break-word;
     border: none;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 12px;
-    margin-top: 15px;
-    letter-spacing: 3px;
-
-}
-
-.black_button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 12px;
-    margin-top: 15px;
-    letter-spacing: 3px;
-
-}
-
-.orange_button {
-    background-color: rgb(245, 157, 50);
-    border: none;
-    color: white;
     padding: 20px 10px;
     text-align: center;
-    overflow-wrap: break-word;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -283,46 +337,7 @@ form>a {
     margin-right: auto;
 }
 
-.align_left {
-    text-align: left;
-}
 
-.green_button {
-    background-color: rgb(60, 159, 98);
-    overflow-wrap: break-word;
-    border: none;
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 20px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* stessa storia dei bottoni. Rifattorizza e astrai le proprietà comuni in un componente generico */
-
-.news_card {
-    background-color: white;
-    border: none;
-    padding: 20px 10px 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 20px;
-    margin-top: 30px;
-    width: 357px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 410px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
 
 .white_card {
     background-color: white;
@@ -361,12 +376,7 @@ form>a {
 
 
 
-.news_img {
-    height: 60%;
-    width: 90%;
-    object-fit: cover;
-    border-radius: 20px;
-}
+
 
 
 
@@ -386,7 +396,7 @@ form>a {
 
 
 
-.div_grey {
+.grey_background {
     background-color: lightgray;
     font-family: 'Open Sans', sans-serif;
     max-width: 100%;
@@ -394,7 +404,7 @@ form>a {
     padding: 25px 50px 50px 50px;
 }
 
-.div_grey_2 {
+.grey_background_2 {
     background-color: lightgray;
     font-family: 'Open Sans', sans-serif;
     max-width: 100%;
@@ -411,9 +421,6 @@ form>a {
     padding: 25px 40px 50px 40px;
 }
 
-.subtitle {
-    font-style: italic;
-}
 
 
 
@@ -447,7 +454,7 @@ form>a {
     text-align: center;
 }
 
-.submit_button>.green_button {
+.submit_button>.my_card.my_card--green {
     margin-top: 5px;
     width: 95%;
 }
@@ -462,7 +469,7 @@ form>a {
     margin-top: 40px;
 }
 
-.orange_button_2 {
+.my_card.my_card--orange_2 {
     background-color: rgb(245, 157, 50);
     border: none;
     color: white;
@@ -523,7 +530,7 @@ form>a {
         width: 450px;
     }
 
-    .article_2 {
+    .article_column {
         flex-direction: column;
         width: 35%;
         align-content: start;
@@ -544,13 +551,13 @@ form>a {
         width: 240px;
     }
 
-    .div_grey {
+    .grey_background {
         display: flex;
         height: 600px;
         padding: 20px 150px 50px 150px;
     }
 
-    .div_grey>.article {
+    .grey_background>.article {
         width: 320px;
     }
 
@@ -558,18 +565,18 @@ form>a {
         font-size: 36px;
     }
 
-    .div_grey>.green_button,
-    .orange_button {
+    .grey_background>.my_card.my_card--green,
+    .my_card.my_card--orange {
         width: 320px;
         height: 240px;
     }
 
-    .div_grey>.orange_button {
+    .grey_background>.my_card.my_card--orange {
         position: relative;
         top: 100px;
     }
 
-    .div_grey>.green_button {
+    .grey_background>.my_card.my_card--green {
         position: relative;
         top: 250px;
     }
@@ -587,22 +594,11 @@ form>a {
         bottom: 40px;
     }
 
-    .news_div {
-        display: block;
-        height: auto;
-    }
+    
 
-    #news_title {
-        font-size: 66px;
-        text-align: center;
-    }
+    
 
-    .news_container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .news_card {
+    .my_card.my_card--news {
         width: 30%;
     }
 
@@ -626,7 +622,7 @@ form>a {
         gap: 20px;
     }
 
-    .orange_button_2 {
+    .my_card.my_card--orange_2 {
         background-color: rgb(245, 157, 50);
         border: none;
         color: white;
@@ -642,12 +638,12 @@ form>a {
 
     }
 
-    .orange_button_2>p {
+    .my_card.my_card--orange_2>p {
         font-size: 16px;
     }
 
-    .coaching_div>.green_button,
-    .orange_button_2,
+    .coaching_div>.my_card.my_card--green,
+    .my_card.my_card--orange_2,
     .bullet_card {
         height: 460px;
         box-sizing: content-box;
@@ -657,8 +653,8 @@ form>a {
         text-align: start;
     }
 
-    .coaching_div>.green_button,
-    .orange_button_2 {
+    .coaching_div>.my_card.my_card--green,
+    .my_card.my_card--orange_2 {
         width: 300px;
     }
 
@@ -676,7 +672,7 @@ form>a {
         font-size: 20px;
     }
 
-    .div_grey_2 {
+    .grey_background_2 {
         background-color: lightgray;
         display: flex;
         height: 600px;
@@ -747,7 +743,7 @@ form>a {
         right: 10px;
     }
 
-    .submit_button>.green_button {
+    .submit_button>.my_card.my_card--green {
         width: 100%;
         position: relative;
         left: 20px;
