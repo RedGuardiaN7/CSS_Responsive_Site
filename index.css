@@ -1,103 +1,13 @@
 /* For smartphones: */
+
+/* Global rules */
+
 body {
     margin: 0;
 }
 
 header {
     height: 80px;
-}
-
-#logo {
-    margin-left: 50px;
-    width: 65px;
-    padding-top: 25px;
-}
-
-.img_div_yellow {
-    background-image: url(img/yellow_background.jpg);
-    color: white;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    padding: 25px 50px 0px 0px;
-}
-
-.img_div_green {
-    background-image: url(img/green_background.jpg);
-    color: white;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    padding: 25px 50px 0px 0px;
-}
-
-.img_div_orange {
-    background-image: url(img/orange_background.jpg);
-    color: white;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    padding: 25px 50px 0px 0px;
-}
-
-.text_div {
-    width: 330px;
-    margin-left: 50px;
-}
-
-.white_title {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-}
-
-.title {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.white_card > p {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 0px;
-}
-
-.orange_button > p {
-    font-size: 16px;
-}
-
-a {
-    color: white;
-    text-transform: uppercase;
-    font-size: large;
-    font-family: 'Open Sans', sans-serif;
-}
-
-form > a {
-    color:lightskyblue;
-    text-decoration: none;
-
-}
-
-.news_card > p {
-    color: darkgray;
-}
-
-.white_card > p {
-    color: darkgray
-}
-
-.green_subtitle {
-    text-decoration: underline;
-    font-size: 18px;
-    padding-top: 40px;
-    letter-spacing: 5px;
-    font-weight: 600;
 }
 
 h1 {
@@ -109,12 +19,93 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* 
-    molte proprietà di questo bottone sono copincollate 
-    prova ad astrarre quelle comuni e creare delle varianti
-    singole (es. metodologia BEM).
-    ES. .my-button
-*/
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    margin-left: -35px;
+    list-style: none;
+    display: table;
+}
+
+ul li:before {
+    content: '\2714\0020';
+    display: table-cell;
+    text-align: right;
+    padding-right: 1em;
+}
+
+li {
+    display: table-row;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    background-color: lightgray;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    min-height: 35px;
+    padding-left: 5px;
+
+}
+
+label {
+    font-size: 16px;
+    position: relative;
+    right: 130px;
+}
+
+form {
+    text-align: center;
+}
+
+textarea {
+    background-color: lightgray;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    min-height: 35px;
+    padding-left: 5px;
+}
+
+footer {
+    font-size: 20px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo {
+    margin-left: 50px;
+    width: 65px;
+    padding-top: 25px;
+}
+
+/* Reusable/common components */
+
+.img_container {
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.div_img {
+    max-height: 420px;
+}
 
 .my-button {
     border: none;
@@ -130,10 +121,112 @@ h2 {
     letter-spacing: 3px;
 }
 
+/* Section 1 */
+
+.yellow_background {
+    background-image: url(img/yellow_background.jpg);
+    color: white;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 0px 0px;
+}
+
+.article {
+    width: 330px;
+    margin-left: 50px;
+}
+
+.white_title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.move_left {
+    position: relative;
+    right: 100px;
+}
+
+/* Section 2 */
+
+.green_background {
+    background-image: url(img/green_background.jpg);
+    color: white;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 0px 0px;
+}
+
+.orange_background {
+    background-image: url(img/orange_background.jpg);
+    color: white;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 25px 50px 0px 0px;
+}
+
+
+
+
+
+.title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.white_card > p {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.orange_button > p {
+    font-size: 16px;
+}
+
+
+
+form>a {
+    color: lightskyblue;
+    text-decoration: none;
+
+}
+
+.news_card>p {
+    color: darkgray;
+}
+
+.white_card>p {
+    color: darkgray
+}
+
+.green_subtitle {
+    text-decoration: underline;
+    font-size: 18px;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+
+
+/* 
+    molte proprietà di questo bottone sono copincollate 
+    prova ad astrarre quelle comuni e creare delle varianti
+    singole (es. metodologia BEM).
+    ES. .my-button
+*/
+
+
+
 
 .my-button.my-button--white {
     background-color: white;
 }
+
 .my-button.my-button--black {
     background-color: black;
     color: white;
@@ -187,7 +280,7 @@ h2 {
     margin-top: 30px;
     max-width: 100%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .align_left {
@@ -208,7 +301,7 @@ h2 {
     border-radius: 20px;
     margin-top: 30px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 /* stessa storia dei bottoni. Rifattorizza e astrai le proprietà comuni in un componente generico */
@@ -226,7 +319,7 @@ h2 {
     margin-top: 30px;
     width: 357px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     height: 410px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
@@ -243,13 +336,13 @@ h2 {
     margin-top: 30px;
     width: 80%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     height: 220px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .bullet_card {
-    color:black;
+    color: black;
     background-color: white;
     border: none;
     padding: 15px 15px;
@@ -266,22 +359,7 @@ h2 {
     margin-right: auto;
 }
 
-ul {
-    margin-left: -35px;
-    list-style: none;
-    display: table;
-  }
-  ul li:before {
-    content: '\2714\0020';
-    display: table-cell;
-    text-align: right;
-    padding-right: 1em;
-  }
 
-li {
-    display: table-row;
-    font-family: 'Open Sans', sans-serif;
-}
 
 .news_img {
     height: 60%;
@@ -290,14 +368,8 @@ li {
     border-radius: 20px;
 }
 
-.div_img {
-    max-height: 420px;
-}
 
-.move_left {
-    position: relative;
-    right: 100px;
-}
+
 
 .icon {
     width: 80px;
@@ -312,11 +384,7 @@ li {
     filter: invert(77%) sepia(43%) saturate(3913%) hue-rotate(338deg) brightness(105%) contrast(92%);
 }
 
-.img_container {
-    margin-top: 40px;
-    width: 100%;
-    overflow: hidden;
-}
+
 
 .div_grey {
     background-color: lightgray;
@@ -347,19 +415,7 @@ li {
     font-style: italic;
 }
 
-input {
-    background-color: lightgray;
-    width: 90%;
-    border: none;
-    border-radius: 10px;
-    min-height: 35px;
-    padding-left: 5px;
-    
-}
 
-label {
-    font-size: 16px;
-}
 
 #terms {
     height: 15px;
@@ -373,14 +429,7 @@ label {
     align-items: center;
 }
 
-form {
-    text-align: center;
-}
 
-label {
-    position: relative;
-    right: 130px;
-}
 
 .check {
     position: relative;
@@ -392,20 +441,13 @@ label {
     left: 12px;
 }
 
-textarea {
-    background-color: lightgray;
-    width: 90%;
-    border: none;
-    border-radius: 10px;
-    min-height: 35px;
-    padding-left: 5px;
-}
 
-.submit_button{
+
+.submit_button {
     text-align: center;
 }
 
-.submit_button > .green_button {
+.submit_button>.green_button {
     margin-top: 5px;
     width: 95%;
 }
@@ -440,14 +482,6 @@ textarea {
     left: 50px;
 }
 
-footer {
-    font-size: 20px;
-    background-color:rgb(37, 37, 37);
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 /* For desktop */
 
@@ -459,17 +493,17 @@ footer {
         padding-top: 25px;
     }
 
-    .img_div_yellow {
+    .yellow_background {
         display: flex;
         height: 800px;
         padding: 0px;
     }
 
-    .img_div_yellow > .img_container {
+    .yellow_background>.img_container {
         order: 1;
     }
 
-    .img_div_yellow > .text_div {
+    .yellow_background>.article {
         order: 2;
     }
 
@@ -483,13 +517,13 @@ footer {
         text-align: start;
     }
 
-    .text_div {
+    .article {
         margin-left: 0px;
         margin-top: 160px;
         width: 450px;
     }
 
-    .text_div_2 {
+    .article_2 {
         flex-direction: column;
         width: 35%;
         align-content: start;
@@ -516,7 +550,7 @@ footer {
         padding: 20px 150px 50px 150px;
     }
 
-    .div_grey > .text_div {
+    .div_grey>.article {
         width: 320px;
     }
 
@@ -524,39 +558,40 @@ footer {
         font-size: 36px;
     }
 
-    .div_grey > .green_button, .orange_button {
+    .div_grey>.green_button,
+    .orange_button {
         width: 320px;
         height: 240px;
     }
 
-    .div_grey > .orange_button {
+    .div_grey>.orange_button {
         position: relative;
         top: 100px;
     }
 
-    .div_grey > .green_button {
+    .div_grey>.green_button {
         position: relative;
         top: 250px;
     }
 
-    .img_div_green {
+    .green_background {
         display: flex;
         height: 800px;
         padding: 0;
         justify-content: end;
     }
 
-    .img_div_green > .img_container {
+    .green_background>.img_container {
         height: 800px;
         position: relative;
         bottom: 40px;
     }
 
-    .news_div{
+    .news_div {
         display: block;
         height: auto;
     }
-    
+
     #news_title {
         font-size: 66px;
         text-align: center;
@@ -571,17 +606,17 @@ footer {
         width: 30%;
     }
 
-    .img_div_orange {
+    .orange_background {
         display: flex;
         height: 800px;
         padding: 0px;
     }
 
-    .img_div_orange > .img_container {
+    .orange_background>.img_container {
         order: 1;
     }
 
-    .img_div_orange> .text_div {
+    .orange_background>.article {
         order: 2;
     }
 
@@ -607,11 +642,13 @@ footer {
 
     }
 
-    .orange_button_2 > p {
+    .orange_button_2>p {
         font-size: 16px;
     }
 
-    .coaching_div > .green_button, .orange_button_2, .bullet_card {
+    .coaching_div>.green_button,
+    .orange_button_2,
+    .bullet_card {
         height: 460px;
         box-sizing: content-box;
         padding: 30px;
@@ -620,7 +657,8 @@ footer {
         text-align: start;
     }
 
-    .coaching_div > .green_button, .orange_button_2 {
+    .coaching_div>.green_button,
+    .orange_button_2 {
         width: 300px;
     }
 
@@ -650,7 +688,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .stats_cards > .white_card {
+    .stats_cards>.white_card {
         width: 20%;
         height: auto;
     }
@@ -660,7 +698,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .white_card > p {
+    .white_card>p {
         font-size: 20px;
         font-weight: 800;
         margin-bottom: 30px;
@@ -678,19 +716,19 @@ footer {
     }
 
     .contact_form {
-        width:40%;
+        width: 40%;
     }
 
-    .contact_info > h1 {
-        font-size: 48px ;
+    .contact_info>h1 {
+        font-size: 48px;
         text-align: start;
         font-weight: 900;
     }
 
-    .contact_form > .bullet_card {
+    .contact_form>.bullet_card {
         padding-bottom: 60px;
     }
-    
+
     form {
         width: 90%;
         text-align: center;
@@ -709,7 +747,7 @@ footer {
         right: 10px;
     }
 
-    .submit_button > .green_button {
+    .submit_button>.green_button {
         width: 100%;
         position: relative;
         left: 20px;
